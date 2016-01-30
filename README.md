@@ -32,23 +32,23 @@ $ zen -i myproject/js -o main.js -m
 
 zenbuilder accepts the following command-line arguments:
 
-* `-i, --in  <root_dir>` \
+* `-i, --in  <root_dir>`  
   Specify the root directory for JavaScript source
 
 
-* `-o, --out <output_file>` \
+* `-o, --out <output_file>`  
   Specify the name of the concatenated output file
   
   
-* `-m, --minify` \
+* `-m, --minify`  
   Also generate a minified JS file in the same location as the output file
 
 
-* `-v, --verbose` \
+* `-v, --verbose`  
   Enable verbose mode to print extra information about build progress
 
 
-* `-h, --help` \
+* `-h, --help`  
   Show help
 
 When zenbuilder is run, it first looks for a `.zenconfig` file in the working directory and attempts to load arguments from there. It then overwrites any loaded arguments with any passed command-line arguments. The format of the `.zenconfig` file is as follows:
@@ -64,5 +64,5 @@ When zenbuilder is run, it first looks for a `.zenconfig` file in the working di
 The only notable difference from the command-line arguments is the presence of the `@ignore` flag, which allows you to specify a list of file endings to ignore (i.e. filenames that end with anything in the list are not included in the concatenated output).
 
 ----
-Eric Schmidt 2016 \
+Eric Schmidt 2016  
 www.eschmidt.co
